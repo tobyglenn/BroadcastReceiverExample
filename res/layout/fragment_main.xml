@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.testapp.MainActivity$PlaceholderFragment" >
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/time"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="27dp"
+        android:text="Basic Receiver (PendingIntent)" />
+
+    <Button
+        android:id="@+id/orderedStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/start"
+        android:layout_below="@+id/start"
+        android:layout_marginTop="38dp"
+        android:text="Ordered Receiver" />
+
+    <Button
+        android:id="@+id/localBroadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/orderedStart"
+        android:layout_below="@+id/orderedStart"
+        android:layout_marginTop="34dp"
+        android:text="Local Broadcast Receiver" />
+
+    <Button
+        android:id="@+id/sendSticky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/localBroadcast"
+        android:layout_below="@+id/localBroadcast"
+        android:layout_marginTop="26dp"
+        android:text="Broadcast Receiver (StickIntent)" />
+
+</RelativeLayout>
